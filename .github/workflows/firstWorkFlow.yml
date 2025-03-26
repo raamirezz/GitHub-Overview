@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: firstJob script
-        shell: cmd
+        shell: bash
         run: echo Hello World! This is the first job
       - name: checkout
         uses: actions/checkout@v4
-      - name: greetings 
+      - name: greetings
         id: greetings
-        uses: actions/hello-word-javascript-action@main
+        uses: actions/hello-world-javascript-action@main
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'JozeLuí'
       - name: time
         run: |
           echo "The time of the greeting was at: ${{ steps.greetings.outputs.time }}"
