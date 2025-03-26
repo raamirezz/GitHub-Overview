@@ -10,7 +10,7 @@ jobs:
       - name: firstJob script
         shell: cmd
         run: echo Hello World! This is the first job
-      - name: chekout
+      - name: checkout
         uses: actions/checkout@v4
       - name: greetings 
         id: greetings
